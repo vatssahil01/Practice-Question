@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice questions</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            position: absolute;
+            top: 20%;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows wrapping of cards */
+            justify-content: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 147px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            position: relative;
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        .card .icon {
+            font-size: 24px;
+        }
+
+        .card .label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            color: black;
+            border-radius: 0 0 15px 15px;
+            padding: 12px 12px;
+            position: absolute;
+            top: 57%;
+            margin-left: -20px;
+            width: 216px;
+            height: 56px;
+            font-size: 25px;
+        }
+
+        .card.it {
+            background: linear-gradient(to bottom, #66ccff, #3399ff);
+        }
+
+        .card.management {
+            background: linear-gradient(to bottom, #cc99ff, #9966ff);
+        }
+
+        .card.coding {
+            background: linear-gradient(to bottom, #66ccff, #3399ff);
+        }
+
+        .card.aptitude {
+            background: linear-gradient(to bottom, #ffcc99, #ff9966);
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0%;
+            border: 5px solid black;
+            width: 100%;
+            height: 60px;
+            font-size: xxx-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .button {
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        img {
+            height: 35px;
+        }
+
+        /* Responsive Design - Consistent on All Screens */
+        @media (max-width: 1440px) {
+            .card {
+                width: 200px;
+                height: 147px;
+            }
+
+            .container {
+                top: 10%;
+                gap: 20px;
+            }
+
+            nav {
+                font-size: 2rem;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .card {
+                width: 200px;
+                height: 147px;
+            }
+
+            .container {
+                top: 15%;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 200px;
+                height: 147px;
+            }
+
+            .container {
+                top: 10%;
+                gap: 15px;
+            }
+
+            nav {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 200px;
+                height: 147px;
+            }
+
+            .container {
+                top: 10%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Navbar</nav>
+    <div class="container">
+        <div class="card it">
+            <div class="icon">
+                <img src="Group 2909.svg" alt="IT">
+            </div>
+            <div class="label">
+                <span><b>IT</b></span>
+                <div class="button">
+                    <span id="icons">
+                        <img src="Next-button.svg">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card management">
+            <div class="icon">
+                <img src="Management.svg">
+            </div>
+            <div class="label">
+                <span><b>Management</b></span>
+                <span id="icons">
+                    <img src="Next-button.svg">
+                </span>
+            </div>
+        </div>
+        <div class="card coding">
+            <div class="icon">
+                <img src="Vector.svg">
+            </div>
+            <div class="label">
+                <span><b>Coding</b></span>
+                <span id="icons">
+                    <img src="Next-button.svg">
+                </span>
+            </div>
+        </div>
+        <div class="card aptitude">
+            <div class="icon">
+                <img src="Vector-2.svg">
+            </div>
+            <div class="label">
+                <span><b>Aptitude</b></span>
+                <span id="icons">
+                    <img src="Next-button.svg">
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
